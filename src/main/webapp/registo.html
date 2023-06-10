@@ -2,31 +2,27 @@
 <html>
 <head>
     <title> Restaurante </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/registo.css">
     <meta charset="UTF-8">
 </head>
 <body>
-<form method="post" action="registo.jsp">
-    <div class="center2">
-        <img src="imagens/logo.png" class="logo">
-        <div class="form-columns">
-            <div class="form-column">
-                <b>Nome</b> <br><input type="text" size="25" name="nome"><br>
-                <b>Nome de utilizador</b> <br><input type="text" size="25" name="nome_utilizador"><br>
-                <b>Cargo</b> <br><input type="text" size="25" name="cargo"><br>
-                <b>Nº telemóvel</b> <br><input type="text" size="25" name="contacto"><br>
+    <form method="post" action="registo.jsp">
+        <div class="center">
+            <img src="imagens/logo.png" class="logo">
+            <div class="form">
+                Nome <br><input type="text" name="nome"><br>
+                Nome de utilizador <br><input type="text" name="nome_utilizador"><br>
+                Cargo <br><input type="text" name="cargo"><br>
+                Nº telemóvel <br><input type="text" name="contacto"><br>
+                Nif <br><input type="text" name="nif"><br>
+                Morada <br><input type="text" name="morada"><br>
+                Data de nascimento <br><input type="date" name="data_nascimento"><br>
+                Palavra-passe <br><input type="password" name="palavra_passe"><br>
+                Repetir palavra-passe <br><input type="password" name="confirm-password"><br>
             </div>
-            <div class="form-column">
-                <b>Nif</b> <br><input type="text" size="25" name="nif"><br>
-                <b>Morada</b> <br><input type="text" size="25" name="morada"><br>
-                <b>Data de nascimento</b> <br><input type="date" size="25" name="data_nascimento"><br>
-                <b>Palavra-passe</b> <br><input type="password" size="25" name="palavra_passe"><br>
-                <b>Repetir palavra-passe</b> <br><input type="password" size="25" name="confirm-password"><br>
-            </div>
+            <br><button type="submit" class="button">Registar</button>
+            <a href="index.html" class="button2"><b>Entrar</b></a>
         </div>
-        <button type="submit" class="button1">Registar</button>
-        <a href="index.html" class="button2"><b>Entrar</b></a>
-    </div>
-</form>
+    </form>
 </body>
 </html>
