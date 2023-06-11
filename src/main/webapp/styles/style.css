@@ -123,19 +123,7 @@ body {
     text-align: justify;
     font-weight: bold;
 
-  }   
-
-.box{
-    width: 150px;
-    height: 125px;
-    background: white;
-    margin: 20px;
-    box-sizing: border-box;
-    font-size: 50px;
-    border-radius: 15px;
-    border: 3px solid;
-    border-color: #3DBF30;
-}
+  }
 
 .box1{
     width: 150px;
