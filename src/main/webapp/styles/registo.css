@@ -9,13 +9,13 @@ body {
 
 input {
     margin-bottom: 8px;
-    width: 180px;
+    width: 200px;
 }
 
 .center {
     background-color: #FFEBD8;
-    width: 300px;
-    height: 650px;
+    width: 400px;
+    height: 660px;
     border: 2px solid;
     padding: 10px;
     border-radius: 15px;
@@ -45,4 +45,9 @@ input {
     height: 35px;
     width: 60px;
     cursor: pointer;
+}
+
+#errorMessage {
+    color: red;
+    font-size: 18px;
 }

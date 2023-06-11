@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <%@page import="java.sql.*"%>
 
 <%
@@ -18,8 +18,7 @@
             if (rs.next()) {
                 response.sendRedirect("painel.html");
             } else {
-                response.sendRedirect("index.html");
-                System.out.println("Login falhado. Nome de utilizador ou palavra-passe errada");
+                response.sendRedirect("iindex.html");
             }
 
             conn.close();

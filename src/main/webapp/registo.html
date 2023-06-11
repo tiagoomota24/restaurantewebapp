@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Restaurante </title>
+    <title>Restaurante</title>
     <link rel="stylesheet" href="styles/registo.css">
     <meta charset="UTF-8">
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+
+            if (password.length < 8) {
+                document.getElementById("errorMessage").innerHTML = "A senha deve ter pelo menos 8 caracteres.";
+                document.getElementById("errorMessage").style.display = "block";
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                document.getElementById("errorMessage").innerHTML = "As senhas não coincidem.";
+                document.getElementById("errorMessage").style.display = "block";
+                return false;
+            }
+        }
+    </script>
 </head>
 <body>
-    <form method="post" action="registo.jsp">
-        <div class="center">
-            <img src="imagens/logo.png" class="logo">
-            <div class="form">
-                Nome <br><input type="text" name="nome"><br>
-                Nome de utilizador <br><input type="text" name="nome_utilizador"><br>
-                Cargo <br><input type="text" name="cargo"><br>
-                Nº telemóvel <br><input type="text" name="contacto"><br>
-                Nif <br><input type="text" name="nif"><br>
-                Morada <br><input type="text" name="morada"><br>
-                Data de nascimento <br><input type="date" name="data_nascimento"><br>
-                Palavra-passe <br><input type="password" name="palavra_passe"><br>
-                Repetir palavra-passe <br><input type="password" name="confirm-password"><br>
-            </div>
-            <br><button type="submit" class="button">Registar</button>
-            <a href="index.html" class="button2"><b>Entrar</b></a>
+<form method="post" action="registo.jsp" onsubmit="return validateForm()">
+    <div class="center">
+        <img src="imagens/logo.png" class="logo">
+        <div class="form">
+            Nome <br><input type="text" name="nome"><br>
+            Nome de utilizador <br><input type="text" name="nome_utilizador"><br>
+            Cargo <br><input type="text" name="cargo"><br>
+            Nº telemóvel <br><input type="text" name="contacto"><br>
+            Nif <br><input type="text" name="nif"><br>
+            Morada <br><input type="text" name="morada"><br>
+            Data de nascimento <br><input type="date" name="data_nascimento"><br>
+            Palavra-passe <br><input type="password" name="palavra_passe" id="password"><br>
+            Repetir palavra-passe <br><input type="password" name="confirm-password" id="confirm-password"><br>
         </div>
-    </form>
+        <br><button type="submit" class="button">Registar</button>
+        <a href="index.html" class="button2">Entrar</a>
+        <p id="errorMessage" class="error-message" style="display: none;"></p>
+    </div>
+</form>
 </body>
 </html>
