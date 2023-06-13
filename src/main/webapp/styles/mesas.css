@@ -60,11 +60,46 @@ body {
     height: 35px;
     width: 120px;
     cursor: pointer;
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
     text-decoration: none;
+    position: absolute;
+    right: 27px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 50px;
+}
+
+#legenda-red {
+    width: 25px;
+    height: 25px;
+    background: white;
+    margin: 20px;
+    margin-left: 55px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 3px solid;
+    border-color: #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#legenda-green {
+    width: 25px;
+    height: 25px;
+    background: white;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 3px solid;
+    border-color: #3DBF30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
 }

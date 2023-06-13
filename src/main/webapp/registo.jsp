@@ -13,7 +13,7 @@
 
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurante", "root", "Skr12345");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurante2", "root", "Skr12345");
 
         String sql = "INSERT INTO funcionario (nome, nome_utilizador, cargo, contacto, nif, morada, data_nasc, palavra_passe, salario) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
         PreparedStatement stmt = conn.prepareStatement(sql);

@@ -63,7 +63,11 @@
             <div id="11" class="livre"><p>Mesa 11</p></div>
             <div id="12" class="livre"><p>Mesa 12</p></div>
         </div>
-        <a class="exit-button" href="painel.html">Voltar</a>
+        <div class="rodape">
+            <div id="legenda-red"></div><p>Ocupada</p>
+            <div id="legenda-green"></div><p>Livre</p>
+            <a class="exit-button" href="painel.html">Voltar</a>
+        </div>
     </div>
 <%
     try {
