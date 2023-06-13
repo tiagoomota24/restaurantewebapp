@@ -38,22 +38,6 @@ body {
     margin: -50px 0 0 -250px;
 }
 
-.center6 {
-    background-color: #FFEBD8;
-    border: 3px solid;
-    height: 825px;
-    width: 1250px;
-    padding: 10px;
-    border-radius: 15px;
-    display: block;
-    margin: 0 auto;
-    transform: translate(0, 5%);
-}
-
-.center6 p1{
-    font-size: 38px;
-}
-
 .center7 {
     background-color: #FFEBD8;
     position: absolute;
@@ -107,8 +91,7 @@ body {
     font-family: Arial;
     text-align: justify;
     font-weight: bold;
-
-  }
+}
 
 .column p{
     color: black;
