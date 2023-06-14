@@ -35,6 +35,7 @@
             System.out.println("Ocorreu um erro ao registar o utilizador.");
         }
 
+        stmt.close();
         conn.close();
     } catch (SQLException e) {
         System.out.println("Erro: " + e.getMessage());

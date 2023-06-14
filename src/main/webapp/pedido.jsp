@@ -2,6 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
     <title>Restaurante</title>
     <link rel="stylesheet" href="styles/pedidos.css">
 </head>

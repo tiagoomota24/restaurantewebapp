@@ -1,100 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title> Restaurante </title>
-    <link rel="stylesheet" href="styles/style.css">
-    <style>   
-      #image {  
-      display: block;
-      margin-top: 25px;  
-      margin-left: auto;  
-      margin-right: 30px;  
-      border: 3px solid;
-      color: black;
-      border-radius: 15px;
-      padding: 15px; 
-      width: 150px;
-      height: 150px;
-      }  
-      </style>  
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="styles/cardapiocliente.css">
 </head>
 <body>
- <form> 
-      <div class="center6">
-      <br>
-      <center><p1> <b> Cardápio </b></p1></center>
-        <br>
-        <br>
-        <div style="margin-left: 265px;">
-          <button class="button4" style="margin-right: 50px;">
-            Entradas
-          </button>
-          <button class="button4" style="margin-right: 50px;">
-            Carne
-          </button>
-          <button class="button4"style="margin-right: 50px;">
-            Pizza
-          </button>
-          <button class="button4"style="margin-right: 50px;">
-            Bebida
-          </button>
-          <button class="button4"style="margin-right: 50px;">
-            Café
-          </button>
-        </div>
-      <div class="centrarvh"> 
-        <div class="row">
-            <div class="column">
-              <img src="imagens/hamburguer.png" id ="image"  >
-              <p> hamburguer vaca </p>
-            </div>
-            <div class="column">
-              <img src="imagens/hamburguer.png" id ="image" >
-              <p> hamburguer vaca </p>
-            </div>
-            <div class="column">
-              <img src="imagens/hamburguer.png" id ="image" >
-              <p> hamburguer vaca </p>
-            </div>
-            <div class="column">
-              <img src="imagens/hamburguer.png" id ="image"  >
-              <p> hamburguer vaca </p>
-            </div>
-            <div class="column">
-              <img src="imagens/hamburguer.png" id ="image"  >
-              <p> hamburguer vaca </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <img src="imagens/hamburguer.png" id ="image" >
-                <p> hamburguer vaca </p>
-              </div>
-              <div class="column">
-                <img src="imagens/hamburguer.png" id ="image" >
-                <p> hamburguer vaca </p>
-              </div>
-              <div class="column">
-                <img src="imagens/hamburguer.png" id ="image" >
-                <p> hamburguer vaca </p>
-              </div>
-              <div class="column">
-                <img src="imagens/hamburguer.png" id ="image"  >
-                <p> hamburguer vaca </p>
-              </div>
-              <div class="column">
-                <img src="imagens/hamburguer.png" id ="image"  >
-                <p> hamburguer vaca </p>
-              </div>
-        </div>
-      </div>
-
-        <button type="submit" class="button3" formaction="editarcardapio.html" style="margin-top: 620px; margin-left: 975px; margin-right: 20px; color: white; border: 0px; background-color: #3DBF30">
-          Enviar  
-        </button>
-        
+<div class="center">
+    <div class="cabeçalho">
+        <h2>Cardápio</h2>
     </div>
-  </form>
+    <form method="post" action="processar_pedido.jsp">
+        <div class="prato">
+            <h3>Pratos</h3>
+            <input type="number" name="quantidade1" min="0" value="0">
+            <input type="checkbox" name="prato" value="Massa à Bolonhesa"> Massa à Bolonhesa - 6,00€
+        </div>
+        <div class="prato">
+            <input type="number" name="quantidade2" min="0" value="0">
+            <input type="checkbox" name="prato" value="Frango Assado"> Frango Assado - 6,50€
+        </div>
+        <div class="prato">
+            <input type="number" name="quantidade3" min="0" value="0">
+            <input type="checkbox" name="prato" value="Risoto de Cogumelos"> Risoto de Cogumelos - 7,00€
+        </div>
+        <div class="prato">
+            <input type="number" name="quantidade4" min="0" value="0">
+            <input type="checkbox" name="prato" value="Cheeseburger"> Cheeseburger - 6,00€
+        </div>
+        <div class="prato">
+            <input type="number" name="quantidade5" min="0" value="0">
+            <input type="checkbox" name="prato" value="Salada de frango"> Salada de frango - 3,50€
+        </div>
+        <div class="prato">
+            <input type="number" name="quantidade6" min="0" value="0">
+            <input type="checkbox" name="prato" value="Pizza da casa"> Pizza da casa - 7,00€
+        </div>
+        <div class="prato">
+            <input type="number" name="quantidade7" min="0" value="0">
+            <input type="checkbox" name="prato" value="Salada russa"> Salada russa - 5,00€
+        </div>
+        <br>
+        <div class="bebida">
+            <h3>Bebidas</h3>
+            <input type="number" name="quantidade8" min="0" value="0">
+            <input type="checkbox" name="bebida" value="Coca-cola"> Coca Cola - 1,50€
+        </div>
+        <div class="bebida">
+            <input type="number" name="quantidade9" min="0" value="0">
+            <input type="checkbox" name="bebida" value="Vinho branco da casa"> Vinho branco da casa - 8,50€
+        </div>
+        <div class="bebida">
+            <input type="number" name="quantidade10" min="0" value="0">
+            <input type="checkbox" name="bebida" value="Vinho rosé da casa"> Vinho rosé da casa - 7,50€
+        </div>
+        <div class="bebida">
+            <input type="number" name="quantidade11" min="0" value="0">
+            <input type="checkbox" name="bebida" value="Vinho tinto da casa"> Vinho tinto da casa - 7,00€
+        </div>
+        <div class="bebida">
+            <input type="number" name="quantidade12" min="0" value="0">
+            <input type="checkbox" name="bebida" value="Água"> Água - 1,00€
+        </div>
+        <div class="bebida">
+            <input type="number" name="quantidade13" min="0" value="0">
+            <input type="checkbox" name="bebida" value="Cerveja"> Cerveja - 1,20€
+        </div>
+        <input type="submit" value="Enviar Pedido" class="send-button">
+    </form>
+</div>
 </body>
 </html>
+
+

@@ -1,0 +1,59 @@
+body {
+    background-color: #FF9723;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.center {
+    background-color: #FFEBD8;
+    width: 500px;
+    height: 720px;
+    border: 4px solid;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: left;
+    font-weight: bold;
+    position: relative;
+}
+
+.prato {
+    margin: 8px;
+    margin-left: 30px;
+}
+
+.bebida {
+    margin: 8px;
+    margin-left: 30px;
+}
+
+.send-button {
+    background-color: #FFEBD8;
+    border-radius: 5px;
+    border: 2px solid;
+    color: black;
+    height: 35px;
+    width: 120px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=number] {
+    width: 50px;
+}
