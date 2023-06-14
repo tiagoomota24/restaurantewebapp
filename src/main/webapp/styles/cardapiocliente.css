@@ -42,7 +42,6 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    margin-right: 50px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -55,5 +54,5 @@ body {
 }
 
 input[type=number] {
-    width: 50px;
+    width: 30px;
 }
